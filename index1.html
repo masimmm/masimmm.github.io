@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="assets/mystyle.css">
+    <link type="text/css" rel="stylesheet" href="assets/banner.css"/> 
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
 </head>
 
@@ -353,6 +354,36 @@
         </a>
         </div>
     </section>
+  </section>
+  <section class="header3 cid-r3otdsLP1U mbr-fullscreen" id="header3-9"
+  style="background: url(assets/images/background_07.jpg) ; background-size:100% 100% ; background-attachment: fixed">
+  </body>>
+    </body>
+    <div class="container">
+        <div class="media-container-row">
+            <div class="media-content">
+                <h1 class="mbr-section-title mbr-white pb-6 mbr-fonts-style display-6">
+                <br>&nbsp&nbsp&nbsp摄影作品集</h1>
+                <h1 class="mbr-section-title mbr-white pb-6 mbr-fonts-style display-7">
+                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp自动轮播，3秒一张</h1>
+                <!-- 建立一个div控件作为图片框 -->
+                <div class="imgBox">
+                    <!-- alt：图片路径失败时替换显示内容 -->
+                    <img class="img-slide img" src="assets/images/photo_01.jpg" alt="img1">
+                    <img class="img-slide img" src="assets/images/photo_02.jpg" alt="img2">
+                    <img class="img-slide img" src="assets/images/photo_03.jpg" alt="img3">
+                    <img class="img-slide img" src="assets/images/photo_04.jpg" alt="img4">
+                    <img class="img-slide img" src="assets/images/photo_05.jpg" alt="img5">
+                    <img class="img-slide img" src="assets/images/photo_06.jpg" alt="img6">
+                    <img class="img-slide img" src="assets/images/photo_07.jpg" alt="img7">
+                    <img class="img-slide img" src="assets/images/photo_08.jpg" alt="img8">
+                    <img class="img-slide img" src="assets/images/photo_09.jpg" alt="img9">
+                    <img class="img-slide img" src="assets/images/photo_10.jpg" alt="img10">
+                    <img class="img-slide img" src="assets/images/photo_10.jpg" alt="img11">
+                    <img class="img-slide img" src="assets/images/photo_10.jpg" alt="img12">
+                </div>
+    </div>
+</section>
     <section class="cid-qTkAaeaxX5 mbr-reveal" id="footer1-2">
         <div class="container">
             <div class="media-container-row content text-white">
@@ -407,6 +438,31 @@
     <script src="assets/parallax/jarallax.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/as-pie-progress/jquery-as-pie-progress.min.js"></script>
+       
+    <script type="text/javascript">
+      // index：索引， len：长度
+      var index = 0, len;
+      // 类似获取一个元素数组
+      var imgBox = document.getElementsByClassName("img-slide");
+      len = imgBox.length;
+      imgBox[index].style.display = 'block';
+      // 逻辑控制函数
+      function slideShow() {
+          index ++;
+          // 防止数组溢出
+          if(index >= len) index = 0;
+          // 遍历每一个元素
+          for(var i=0; i<len; i++) {
+              imgBox[i].style.display = 'none';
+          }
+          // 每次只有一张图片显示
+          imgBox[index].style.display = 'block';
+      }
+      
+      // 定时器，间隔3s切换图片
+      setInterval(slideShow, 3000);
+      
+  </script>
     <script>
     jQuery(function($) {
         $('#next-skill').on('click', function() {
@@ -417,21 +473,5 @@
     </script>
 </body>
 
-<!--
-<body>
-  <div class="bubbles">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-  </div>
-</body>
--->
 
 </html>
