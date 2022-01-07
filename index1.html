@@ -149,6 +149,70 @@
           transform: translateX(-200px);
       }
   }
+
+        a:link,
+        a:hover,
+        a:visited,
+        a:active {
+          color: #fff;
+          text-decoration: none;
+        }
+        
+        body {
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          background: #fff;
+        }
+        
+        .card-holder {  
+          position: fixed;
+          width: 0px;
+          overflow: visible;
+        }
+        
+        .card-wrapper {
+          display: inline-block;
+          float: right;
+          clear: both;
+        }
+        
+        .card {
+          position: relative;
+          left: 32px;
+          padding: 16px 32px 16px 64px;
+          margin: 8px;  
+          background: #fff;
+          transition: all 0.3s ease-in-out 0.1s;
+        }
+        
+        .card:hover {
+          position: relative;
+          left: 100%;
+          margin-left: -32px;
+          transition: all 0.3s ease-in-out;
+        }
+        
+        .card-content {
+          display: inline-block;
+          color: #fff;
+          font-family: 'Droid Sans', sans-serif;
+          position: relative;
+          z-index: 9999px;
+          font-size: 16px;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+        
+        .bg-01 { background: #539770; }
+        .bg-02 { background: #4B7D74; }
+        .bg-03 { background: #8DC2BC; }
+        .bg-04 { background: #EDD6B4; }
+        .bg-05 { background: #BE7467; }
+        .bg-06 { background: #E2AE63; }
+        
+
 </style>
 
 <body>
@@ -167,12 +231,55 @@
       </div>
         <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);">
         </div>
+        <div class='card-holder'>
+          <div class='card-wrapper'>
+              <a href='#A1'>
+                  <div class='card bg-01'>
+                      <span class='card-content'>个人简介</span>
+                  </div>
+              </a>
+          </div>
+          <div class='card-wrapper'>
+              <a href='#A2'>
+                  <div class='card bg-02'>
+                      <span class='card-content'>课业学习</span>
+                  </div>
+              </a>
+          </div>
+          <div class='card-wrapper'>
+              <a href='#A3'>
+                  <div class='card bg-03'>
+                      <span class='card-content'>学术科创·国家级大创</span>
+                  </div>
+              </a>
+          </div>
+          <div class='card-wrapper'>
+              <a href='#A4'>
+                  <div class='card bg-04'>
+                      <span class='card-content'>学术科创·大广赛</span>
+                  </div>
+              </a>
+          </div>
+          <div class='card-wrapper'>
+              <a href='#A5'>
+                  <div class='card bg-05'>
+                      <span class='card-content'>实习实践</span>
+                  </div>
+              </a>
+          </div>
+          <div class='card-wrapper'>
+              <a href='#A6'>
+                  <div class='card bg-06'>
+                      <span class='card-content'>摄影作品集</span>
+                  </div>
+              </a>
+          </div>
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="mbr-white col-md-10">
                     <h1 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">叮~欢迎光临小淼的个人天地~</h1>
                     <p class="mbr-text align-center display-5 pb-3 mbr-fonts-style typing">Welcome to K.X.Miao's homepage~</p>
-
                 </div>
             </div>
         </div>
@@ -182,29 +289,25 @@
         </a>
         </div>
     </section>
-    <section class="engine"><a href="https://mobiri.se/r">bootstrap templates</a></section>
+    <a name="A1"></a>
     <section class="header3 cid-r3otdsLP1U mbr-fullscreen" id="header3-9"
     style="background: url(assets/images/background_02.jpg) ; background-size:100% 100% ; background-attachment: fixed">
-    </body>>
-      </body>
-        <div class="container">
+        <div class="container"><a name="A1">
             <div class="media-container-row">
                 <div class="mbr-figure" style="width: 50%;">
                     <img src="assets/images/pic_02.jpg" alt="Mobirise" title="">
                 </div>
-                <div class="media-content">
+                <div class="media-content">       
                     <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-2">我是马思淼，一个学广告的。&nbsp;</h1>
                     <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-5">西北大学新闻传播学院 
-<div>2019级本科生&nbsp;</div></h3>
+                      <div>2019级本科生&nbsp;</div></h3>
                     <div class="mbr-section-text mbr-white pb-3 ">
                       <p class="mbr-text mbr-fonts-style display-5">“做一名对社会有用的NWUer。”</p>
                         <p class="mbr-text mbr-fonts-style display-7 ">• 在西大新传“画采编设播一体”的培养体系之下，努力做一个会写、会采、会导、会编、会播、会演、会拍、会剪、会画、会设计、会写代码的全能型人才。
                             <br>• 立志用广告讲好中国故事，用创意传播中国声音，为成为一名能够担当民族复兴大任的时代新人而奋斗终身。</p>
                     </div>
-
                     <div class="mbr-section-btn"><a class="btn btn-md btn-white-outline display-4" href="https://xinwen.nwu.edu.cn/" target="_blank">Learn More about JC @ NWU</a>
                         <a class="btn btn-md btn-black-outline display-4" href="https://xinwen.nwu.edu.cn/">Learn More about JC @ NWU</a></div>
-
                 </div>
             </div>
         </div>
@@ -214,6 +317,7 @@
         </a>
         </div>
     </section>
+    <a name="A2"></a>
     <section class="header3 cid-r3otdsLP1U mbr-fullscreen" id="header3-9"
     style="background: url(assets/images/background_03.jpg) ; background-size:100% 100% ; background-attachment: fixed">
     </body>>
@@ -249,6 +353,7 @@
       </a>
       </div>
   </section>
+  <a name="A3"></a>
     <section class="header3 cid-r3otdsLP1U mbr-fullscreen" id="header3-9"
     style="background: url(assets/images/background_04.jpg) ; background-size:100% 100% ; background-attachment: fixed">
     </body>>
@@ -279,6 +384,7 @@
         </a>
         </div>
     </section>
+    <a name="A4"></a>
     <section class="header3 cid-r3ozbOCA7G mbr-fullscreen" id="header3-e"     style="background: url(assets/images/background_05.jpg) ; background-size:100% 100% ; background-attachment: fixed">
     </body>>
       </body>
@@ -317,6 +423,7 @@
         </a>
         </div>
     </section>
+    <a name="A5"></a>
     <section class="header3 cid-r3qD4KEELP mbr-fullscreen" id="header3-7"
     style="background: url(assets/images/background_06.jpg) ; background-size:100% 100% ; background-attachment: fixed">>
     <div class="container">
@@ -352,6 +459,7 @@
         </div>
     </section>
   </section>
+  <a name="A6"></a>
   <section class="header3 cid-r3otdsLP1U mbr-fullscreen" id="header3-9"
   style="background: url(assets/images/background_07.jpg) ; background-size:100% 100% ; background-attachment: fixed">
   </body>>
